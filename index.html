@@ -56,7 +56,7 @@
     </div>
 
 
-  <div class="col-4">
+  <div class="col-5">
     <div class="logoFleche d-flex align-item-center mt-3 me-3">
       <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-arrow-left me-2" viewBox="0 0 16 16">
         <path fill-rule="evenodd" d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8"/>
@@ -64,8 +64,8 @@
       <p class="titre fs-5 fw-bold">Try either for the following users</p>
     </div>
 
-    <div class="card">
-      <div class="body-card">
+    <div class="card mb-3 ">
+      <div class="body-card ">
         <table class="table table-bordered">
           <thead>
           <tr>
@@ -91,11 +91,44 @@
       </div>
     </div>
 
-    <div class="card">
-      <div class="body-card">
+    <div class="card ">
+      <div class="body-card ">
         <table class="table table-bordered">
-          <p>If these user dont work, reload application features by</br> running this command from the terminal</p>
-          <p class="row row p-2 bg-info bg-opacity-10 border border-light border-start-0 rounded-end"></p>
+        <div class="row mb-4">
+          <div class="col-2 ">
+            <div class="alert d-flex align-item-start">
+              <span class="badge bg-success ">Note</span>
+            </div>
+          </div>
+          <div class="col-10">
+              <h6 class="text-body-secondary"> If these user dont work, reload application fixture by</br> running this command from the terminal </h6>
+
+            <div class="form-floating">
+              <input type="email" class="form-control" id="floatingInputDisabled" placeholder="name@example.com" disabled>
+              <label for="floatingInputDisabled">$ php app/console doctrine:fixture:load</label>
+            </div>
+          </div>
+        </div>
+
+          <div class="row">
+            <div class="col-2 ">
+              <div class="alert d-flex align-item-start">
+                <span class="badge bg-success ">TIP</span>
+              </div>
+            </div>
+            <div class="col-10">
+              <h6 class="text-body-secondary"> If you want a creat a new users, run this other command: </h6>
+
+              <div class="form-floating">
+                <input type="email" class="form-control" id="floatingInputDisabled" placeholder="name@example.com" disabled>
+                <label for="floatingInputDisabled">$ php app/console app:add-user</label>
+              </div>
+            </div>
+          </div>
+
+
+
+
 
         </table>
       </div>
@@ -112,11 +145,26 @@
 
 
 
+
+
+
+
+
+
   </div>
 
 
-  <div class="col-5">
-   <p>zdazc</p>
+  <div class="col-4 ">
+    <div class="card mb-3" style="width: 18rem;">
+      <div class="card-body">
+        <p class="card-text">This is a demo application built in the Symfony Framework to illustrate the recommended way of developon Symfony application</p>
+        <p class="pt-3">For more information check out the symfony documentation. </p>
+      </div>
+    </div>
+    <p>Click on this button to show the source code of the controller and template used to render this page</p>
+    <div class="d-grid gap-3 pb-5 mx-auto pt-3">
+      <button class="btn btn-primary btn-lg" type="button">Show source code</button>
+    </div>
 
   </div>
 
